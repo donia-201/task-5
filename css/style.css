@@ -1,9 +1,17 @@
-
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 nav , footer{
     background-color: #061532;
 }
+nav li{
+    color: rgb(114, 113, 113) !important;
+}
+nav li:hover , nav li:active {
+    color: white;
+}
 main.home{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5 ),rgba(0 ,0 ,0 ,0.5 )),url(../img/programming.jpg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.7 ),rgba(0 ,0 ,0 ,0.7 )),url(../img/programming.jpg);
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
