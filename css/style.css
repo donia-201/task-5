@@ -34,7 +34,7 @@ main.about{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    padding-top: 30px;
+    padding: 50px;
 }
 main.portfolio{ 
     background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5 ),rgba(0 ,0 ,0 ,0.5 )),url(../img/11\ \(1\).jpg);
@@ -50,9 +50,13 @@ main.portfolio{
     flex: 1;
 }
 .img-fluid{
-    padding: 30px 20px;
     filter: drop-shadow(8px 8px 15px rgba(0 ,0 ,0 ,0.5 ));
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.about .img-fluid{
+   filter: drop-shadow(8px 8px 15px rgba(0 ,0 ,0 ,0.5 ));
+    border-radius: 60px ; 
 }
 .list li{
     position: relative;
@@ -61,14 +65,14 @@ main.portfolio{
 }
 .list li::before{
     position: absolute;
-    content: "";
+    content: "✔";
     color: rgb(43, 43, 190);
     left: -15px;
 }
 div.card{
     background-color: #061532;
     padding: 15px;
-    border-left: 4px solid blue;
+    border-left: 4px solid rgb(53, 111, 199);
 transition: 0.3s ease;
  flex: 1;
 }
@@ -78,15 +82,19 @@ div.card:hover{
     box-shadow: 0 8px 24px rgba(0 ,0 ,0 ,0.15 );
     
 }
+div
 div.portfolio{
     background-color: #061532;
     border-radius: 10px;
     margin: 10px;
     padding: 0;
     transition: 0.3s ease;
-
+    overflow: hidden;
 }
 div.portfolio:hover{
     transform: translateY(-20px);
 
+}
+div.portfolio:hover img{
+    transform:scale(1.1);
 }
